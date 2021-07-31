@@ -1,5 +1,4 @@
 from mysql import connector
-from mysql.connector import errorcode
 
 class DBHelper():
     def __init__(self, host: str, port: str, user: str, password: str, database: str):
@@ -149,7 +148,6 @@ class DBHelper():
 
 if __name__ == '__main__':
     # connect SQL
-    helper = DBHelper('localhost', '3306', 'root', '09112000', 'amthuc')
 
     # test tạo bảng
     # sql = "create table test2(id1 int, id2 int)"
